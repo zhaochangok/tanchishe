@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../images/2.jpg)no-repeat center -100px;
+    overflow: hidden;
+    position: relative;
+}
+h2 {
+    margin: 0;
+    padding: 0;
+}
+.changjing {
+    width: 600px;
+    height: 600px;
+    background: #333;
+    opacity: 0.8;
+    margin: 20px auto;
+    box-shadow: 0 0 15px #000;
+    border-radius: 5px;
+    position: relative;
+}
+.changjing .block {
+    width: 30px;
+    height: 30px;
+    float: left;
+    border-radius: 5px;
+}
+.changjing .she {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background: url(../images/she.jpg)no-repeat right center;
+    background-size: cover;
+}
+.changjing .shiwu {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background: url(../images/shiwu.jpg) no-repeat center center;
+    background-size: cover;
+}
+.changjing.animate .zuo {
+    transform: translateX(-100%);
+}
+.changjing.animate .you {
+    transform: translateX(100%);
+}
+.changjing.animate h2 {
+    transform: translateY(-500%);
+    opacity: 0;
+}
+.changjing h2 {
+    color: #fff;
+    width: 400px;
+    position: absolute;
+    left: 110px;
+    top: 300px;
+    font-size: 30px;
+    z-index: 20002;
+    transition: all .6s ease;
+    opacity: 1;
+}
+.changjing .zuo, .you {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+.changjing .zuo {
+    width: 300px;
+    height: 600px;
+    background: orange;
+    float: left;
+    transition: all .6s ease;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.changjing .you {
+    width: 300px;
+    height: 600px;
+    background: green;
+    position: absolute;
+    left: 300px;
+    top: 0;
+    transition: all .6s ease;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.changjing .tishi {
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    background: url("../images/u=3627487404,4253984681&fm=21&gp=0.jpg")no-repeat;
+    position: absolute;
+    top: 250px;
+    left: 200px;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    font-size: 25px;
+    transform: translateY(-500%);
+    transition: all .8s ease;
+    opacity: 0;
+}
+.changjing .shibai {
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    background: url("../images/u=3757253059,2618504885&fm=21&gp=0.jpg")no-repeat;
+    position: absolute;
+    top: 250px;
+    left: 200px;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    font-size: 25px;
+    transform: translateY(-500%);
+    transition: all .8s ease;
+    opacity: 0;
+}
+.changjing.fail .tishi {
+    transform: translateY(0);
+    opacity: 1;
+}
+.changjing.wan .shibai {
+    transform: translateY(0);
+    opacity: 1;
+}
+.stop{
+  width: 100px;
+  height: 40px;
+  background: rgba(222, 23, 4,0.6);
+  transition:all 1s ease;
+  opacity: 0;
+  border-radius: 5px;
+  position: absolute;
+  left: 160px;
+  top: 100px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 40px;
+  transform: translateX(-100%);
+  cursor: pointer;
+}
+.stop:hover{
+  background: rgba(103, 95, 1,0.6);
+  color: #333;
+}
+.stop.kaiqi{
+  opacity: 1;
+  transform: translateX(0);
+}
+.chongxin{
+  width: 100px;
+  height: 40px;
+  background: rgba(32, 249, 216,0.6);
+  transition:all 1s ease;
+  opacity: 0;
+  border-radius: 5px;
+  position: absolute;
+  left: 160px;
+  top: 220px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 40px;
+  transform: translateX(-100%);
+  cursor: pointer;
+}
+.chongxin:hover{
+  background: rgba(103, 95, 1,0.6);
+  color: #333;
+}
+.chongxin.kaiqi{
+  opacity: 1;
+  transform: translateX(0);
+}
+.close{
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  background: rgba(33, 90, 99,0.6);
+  transition:all 1s ease;
+  opacity: 0;
+  border-radius: 5px;
+  transform: translateX(-100%);
+  position: absolute;
+  left: 160px;
+  top: 340px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.close:hover{
+  background: rgba(15, 139, 97,0.6);
+  color: #333;
+}
+.close.kaiqi{
+  opacity: 1;
+  transform: translateX(0);
+}
+.zailai{
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  background: rgba(175, 124, 221,0.6);
+  transition:all 1s ease;
+  opacity: 0;
+  transform: translateX(-100%);
+  border-radius: 5px;
+  position: absolute;
+  left: 160px;
+  top: 460px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.zailai:hover{
+  background: rgba(75, 53, 230,0.6);
+  color: #333;
+}
+.zailai.kaiqi{
+  opacity: 1;
+  transform: translateX(0);
+}
